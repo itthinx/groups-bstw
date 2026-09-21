@@ -34,7 +34,7 @@ if ( !defined( 'ABSPATH' ) ) {
 class Groups_BSTW {
 
 	public static function boot() {
-		add_action( 'groups_shortcodes_widget_display_callback_widget_content', array( __CLASS__, 'groups_shortcodes_widget_display_callback_widget_content' ) );
+		add_action( 'groups_shortcodes_widget_display_callback_widget_content', array( __CLASS__, 'groups_shortcodes_widget_display_callback_widget_content' ), 10, 4 );
 	}
 
 	public static function groups_shortcodes_widget_display_callback_widget_content( $content, $instance, $widget, $args ) {
